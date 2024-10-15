@@ -1,0 +1,58 @@
+﻿<Page x:Class="UchebkaHaha.Pages.RegPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UchebkaHaha.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <TextBlock Text="Регистрация" FontSize="24" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Фамилия:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBox Name="LastNameTb" VerticalAlignment="Center" Width="200" Margin="0,0,0,10"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Имя:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBox Name="txtFirstName" VerticalAlignment="Center" Width="200" Margin="0,0,0,10"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Отчество:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBox Name="txtMiddleName" VerticalAlignment="Center" Width="200" Margin="0,0,0,10"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Роль:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <ComboBox Name="cmbRole" VerticalAlignment="Center" Width="200" Margin="0,0,0,10">
+                    <ComboBoxItem Content="Пользователь"/>
+                    <ComboBoxItem Content="Администратор"/>
+                    <ComboBoxItem Content="Модератор"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Логин:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBox Name="txtLogin" VerticalAlignment="Center" Width="200" Margin="0,0,0,10"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Пароль:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <PasswordBox Name="txtPassword" VerticalAlignment="Center" Width="200" Margin="0,0,0,10"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="Фото:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <Button Name="btnUploadPhoto" Content="Загрузить фото" VerticalAlignment="Center" Width="200" Margin="0,0,0,10"/>
+            </StackPanel>
+
+            <Button Name="btnRegister" Content="Зарегистрироваться" Width="150" Height="20" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Page>
