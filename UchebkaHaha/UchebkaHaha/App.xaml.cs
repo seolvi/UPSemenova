@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using UchebkaHaha.Base;
 
 namespace UchebkaHaha
 {
@@ -13,5 +14,8 @@ namespace UchebkaHaha
     /// </summary>
     public partial class App : Application
     {
+        public static UPSemenovaEntities1 db = new UPSemenovaEntities1();
+        public static MainWindow mainWindow;
+        public static User currentUser;
     }
 }
